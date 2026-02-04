@@ -163,6 +163,15 @@ public void loadData() {
                 return types [columnIndex];
             }
         });
+        tabelPasien.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                tabelPasienAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
         tabelPasien.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelPasienMouseClicked(evt);
@@ -370,6 +379,10 @@ public void loadData() {
         inputAlamat.setText(alamat);
 
     }//GEN-LAST:event_tabelPasienMouseClicked
+
+    private void tabelPasienAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tabelPasienAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tabelPasienAncestorAdded
 
     public void bersihkanForm() {
         inputRM.setText((""));
